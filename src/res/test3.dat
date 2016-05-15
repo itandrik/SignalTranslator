@@ -1,0 +1,24 @@
+PROGRAM P1;
+CONST
+	I = 1;
+	K = 3;
+BEGIN
+    CASE I OF
+    I*1:/\
+    I : /
+        CASE K+1-2 OF
+        I + 4:/\
+        5:/\
+        10:/\
+        ENDCASE;
+    \
+    16 :/
+        CASE I+K OF
+        5:/
+            CASE K OF
+            ENDCASE;
+        \
+        ENDCASE;
+    \
+    ENDCASE;
+END.

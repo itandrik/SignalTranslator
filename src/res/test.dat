@@ -1,0 +1,18 @@
+PROGRAM P1;
+CONST
+	I = 1;
+	J = 2;
+	K (*= 3; 
+BEGIN
+	CASE*) I OF 
+	3-4+J : // 
+    \
+	k : / 
+	\
+	J - K? + 3 :: / 
+		(*CASE J OF
+		3 : /\
+		ENDCASE;
+	#\
+	ENDCASE;
+END.

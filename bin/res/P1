@@ -1,0 +1,62 @@
+DATA SEGMENT
+	 I	dw	1
+	 K	dw	3
+DATA ENDS
+CODE SEGMENT
+
+START:
+		MOV AX,I
+		MOV BX,I
+		ADD BX,1
+		CMP AX,BX
+		JE ?L1
+		MOV BX,I
+		CMP AX,BX
+		JE ?L2
+		MOV BX,16
+		CMP AX,BX
+		JE ?L3
+?L1:
+		NOP
+		JMP ?E1
+?L2:
+		MOV AX,K
+		ADD AX,1
+		SUB AX,2
+		MOV BX,I
+		ADD BX,4
+		CMP AX,BX
+		JE ?L4
+		MOV BX,5
+		CMP AX,BX
+		JE ?L5
+		MOV BX,10
+		CMP AX,BX
+		JE ?L6
+?L4:
+		NOP
+		JMP ?E2
+?L5:
+		NOP
+		JMP ?E2
+?L6:
+		NOP
+?E2:	NOP
+		NOP
+		JMP ?E1
+?L3:
+		MOV AX,I
+		ADD AX,K
+		MOV BX,5
+		CMP AX,BX
+		JE ?L7
+?L7:
+		MOV AX,K
+?E4:	NOP
+		NOP
+?E3:	NOP
+		NOP
+?E1:	NOP
+		NOP
+CODE ENDS
+END START
